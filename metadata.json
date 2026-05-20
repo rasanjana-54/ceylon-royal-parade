@@ -1,0 +1,6 @@
+{
+  "name": "Ceylon Royal Parade",
+  "description": "Luxury Wedding Cars & Parade Experience Website in Sri Lanka",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
