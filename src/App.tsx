@@ -1,4 +1,3 @@
-/* Commit 3/4: Integrate Showroom Details Overlay and Carriage Spec Profiles */
 import React, { useState, useEffect } from 'react';
 import {
   Sparkles,
