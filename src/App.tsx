@@ -1,4 +1,4 @@
-/* Commit 1/4: Setup Page Shell and Hero Slider */
+/* Commit 2/4: Integrate Responsive Fleet Showcase and Category Filters */
 import React, { useState, useEffect } from 'react';
 import {
   Sparkles,
