@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ceylon-royal-parade.vercel.app/sitemap.xml
