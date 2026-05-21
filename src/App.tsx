@@ -398,9 +398,9 @@ Please verify availability and block this vehicle for our special day! Thank you
                         </p>
                       </div>
                       <div className="text-right shrink-0">
-                        <span className="block text-[8px] uppercase tracking-widest text-neutral-500 font-mono">Base (8H/80KM)</span>
-                        <span className="text-[#c5a880] font-display text-sm tracking-wider font-bold">
-                          LKR {car.basePriceLkr.toLocaleString()}
+                        <span className="block text-[8px] uppercase tracking-widest text-neutral-500 font-mono">Charter</span>
+                        <span className="text-[#c5a880] font-display text-xs tracking-wider font-semibold uppercase">
+                          Inquire
                         </span>
                       </div>
                     </div>
@@ -446,7 +446,6 @@ Please verify availability and block this vehicle for our special day! Thank you
                   </button>
                   <button
                     onClick={() => {
-                      setCalcCarId(car.id);
                       setBooking(prev => ({ ...prev, carId: car.id }));
                       const targetEl = document.getElementById('booking');
                       if (targetEl) {
@@ -594,8 +593,8 @@ Please verify availability and block this vehicle for our special day! Thank you
               {/* Action buttons */}
               <div className="pt-4 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
                 <div className="text-left font-mono">
-                  <span className="text-neutral-500 text-[9px] uppercase block tracking-wider">Base Package Rate (8 Hour)</span>
-                  <span className="text-[#c5a880] font-bold text-base tracking-wider">LKR {activeCarDetail.basePriceLkr.toLocaleString()} /=</span>
+                  <span className="text-neutral-500 text-[9px] uppercase block tracking-wider">Premium Wedding Charter</span>
+                  <span className="text-[#c5a880] font-bold text-xs tracking-wider uppercase">Contact for Best Rates</span>
                 </div>
                 
                 <button
@@ -682,7 +681,7 @@ Please verify availability and block this vehicle for our special day! Thank you
                   className="w-full bg-neutral-900 border border-white/10 p-3.5 text-white font-medium focus:outline-none focus:border-[#c5a880] font-mono text-[11.5px]"
                 >
                   {WEDDING_CARS.map(c => (
-                    <option key={c.id} value={c.id} className="bg-neutral-950 text-white font-mono">{c.name} (Base LKR {c.basePriceLkr.toLocaleString()})</option>
+                    <option key={c.id} value={c.id} className="bg-neutral-950 text-white font-mono">{c.name}</option>
                   ))}
                 </select>
               </div>
@@ -863,7 +862,7 @@ Please verify availability and block this vehicle for our special day! Thank you
               },
               {
                 q: "What happens if our wedding event exceeds the 8-hour duration?",
-                a: "No stress! Any extra hours are easily charged at the transparent standard hourly rate specified on each car profile, with no hidden penalty fees."
+                a: "No stress! Any extra hours are easily charged at our standard flexible hourly rate, which we will coordinate with you during confirmation."
               }
             ].map((faq, index) => (
               <div
