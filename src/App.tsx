@@ -160,42 +160,25 @@ Please verify availability and block this vehicle for our special day! Thank you
       <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#c5a880]/5 blur-[150px] rounded-full pointer-events-none z-0" />
       <div className="absolute bottom-[25%] right-[-10%] w-[40%] h-[40%] bg-neutral-800/10 blur-[150px] rounded-full pointer-events-none z-0" />
  
-      {/* TOP HEADER CONTACT BANNER */}
-      <header className="relative z-50 bg-black/80 backdrop-blur-md border-b border-white/5 py-3 px-4 text-xs tracking-wider uppercase font-mono text-neutral-400">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
-          <div className="flex items-center gap-2">
-            <span className="inline-block w-2 h-2 rounded-full bg-[#c5a880] animate-pulse"></span>
-            <span>Premium Ceylon Wedding Cars • Chauffeur & Custom Floral Decor Included</span>
-          </div>
-          <div className="flex items-center gap-5 font-sans">
-            <a href="tel:0754855555" className="hover:text-[#c5a880] flex items-center gap-1.5 transition-all text-neutral-300">
-              <Phone className="w-3.5 h-3.5 text-[#c5a880]" /> 075 485 5555
-            </a>
-            <span className="text-white/10">|</span>
-            <a href="https://wa.me/94754855555" target="_blank" rel="noreferrer" className="hover:text-emerald-400 flex items-center gap-1.5 transition-all text-neutral-300">
-              <MessageCircle className="w-3.5 h-3.5 text-emerald-400" /> WhatsApp Support
-            </a>
-          </div>
-        </div>
-      </header>
+
  
       {/* NAV BAR */}
-      <nav className="sticky top-0 z-40 bg-black/60 backdrop-blur-xl border-b border-white/5 py-4">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
+      <nav className="sticky top-0 z-40 bg-black/60 backdrop-blur-xl border-b border-white/5 py-3 sm:py-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center gap-4">
           {/* Logo brand */}
-          <div className="flex items-center gap-3">
-            <div className="leading-tight">
-              <span className="block font-display text-xl md:text-2xl tracking-[0.2em] font-light text-white uppercase">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="leading-tight min-w-0">
+              <span className="block font-display text-xs sm:text-base md:text-xl lg:text-2xl tracking-[0.1em] sm:tracking-[0.2em] font-light text-white uppercase truncate">
                 CEYLON ROYAL PARADE
               </span>
-              <span className="block text-[8px] uppercase tracking-[0.3em] text-neutral-400 font-mono mt-1">
+              <span className="block text-[7px] sm:text-[8px] uppercase tracking-[0.2em] sm:tracking-[0.3em] text-neutral-400 font-mono mt-1 truncate">
                 Luxury Wedding Car Rentals Sri Lanka
               </span>
             </div>
           </div>
 
           {/* Desktop links */}
-          <div className="hidden lg:flex items-center gap-8 text-[10px] tracking-[0.2em] text-neutral-400 uppercase font-mono font-medium">
+          <div className="hidden lg:flex items-center gap-8 text-[10px] tracking-[0.2em] text-neutral-400 uppercase font-mono font-medium shrink-0">
             <a href="#home" className="hover:text-white transition-colors">Home</a>
             <a href="#fleet" className="hover:text-white transition-colors">Our Fleet</a>
             <a href="#services" className="hover:text-white transition-colors">Services</a>
@@ -204,10 +187,10 @@ Please verify availability and block this vehicle for our special day! Thank you
           </div>
 
           {/* Book Now Button */}
-          <div>
+          <div className="shrink-0">
             <a
               href="#booking"
-              className="px-5 py-2.5 bg-[#c5a880] text-black hover:bg-white hover:text-black font-semibold text-xs tracking-[0.1em] uppercase transition-all duration-300 shadow-lg shadow-[#c5a880]/10"
+              className="px-3 sm:px-5 py-1.5 sm:py-2.5 bg-[#c5a880] text-black hover:bg-white hover:text-black font-semibold text-[9px] sm:text-xs tracking-[0.05em] sm:tracking-[0.1em] uppercase transition-all duration-300 shadow-lg shadow-[#c5a880]/10"
             >
               Reserve Drive
             </a>
@@ -241,7 +224,7 @@ Please verify availability and block this vehicle for our special day! Thank you
             Premium Fleet & Service
           </div>
           
-          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl tracking-wider leading-tight text-white uppercase">
+          <h1 className="font-display text-3xl sm:text-5xl md:text-7xl tracking-wider leading-tight text-white uppercase">
             ARRIVE IN <br/>
             <span className="text-[#c5a880] font-serif font-light italic tracking-normal block mt-2 normal-case font-semibold">
               Absolute Majesty
@@ -519,7 +502,7 @@ Please verify availability and block this vehicle for our special day! Thank you
       {/* DETAILED SHOWROOM MODAL POPUP */}
       {activeCarDetail && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md">
-          <div className="relative w-full max-w-2xl bg-neutral-950 border border-white/10 rounded-none shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+          <div className="relative w-full max-w-2xl bg-neutral-950 border border-white/10 rounded-none shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-200">
             {/* Close button */}
             <button
               onClick={() => setActiveCarDetail(null)}
@@ -529,7 +512,7 @@ Please verify availability and block this vehicle for our special day! Thank you
             </button>
 
             {/* Modal Image */}
-            <div className="relative h-60 md:h-72">
+            <div className="relative h-48 sm:h-60 md:h-72">
               <img
                 src={activeCarDetail.images[0]}
                 alt={activeCarDetail.name}
@@ -551,14 +534,14 @@ Please verify availability and block this vehicle for our special day! Thank you
             </div>
 
             {/* Modal Specs */}
-            <div className="p-6 md:p-8 space-y-6">
+            <div className="p-4 sm:p-6 md:p-8 space-y-6">
               <div className="space-y-2">
                 <span className="text-[10px] uppercase tracking-wider text-[#c5a880] font-mono font-bold block">Luxury Carriage Profile</span>
                 <p className="text-xs text-neutral-300 leading-relaxed">{activeCarDetail.description}</p>
               </div>
 
               {/* Specs detailed table */}
-              <div className="grid grid-cols-2 gap-4 text-xs font-mono">
+              <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 text-xs font-mono">
                 <div className="p-3 bg-white/5 border border-white/5 rounded-none space-y-1">
                   <span className="text-neutral-500 text-[9px] uppercase block tracking-wider">Vehicle Color</span>
                   <span className="text-white font-medium">{activeCarDetail.specs.color}</span>
